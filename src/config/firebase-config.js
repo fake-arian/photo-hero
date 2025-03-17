@@ -2,7 +2,7 @@
 // Replace these values with your Firebase project configuration
 // Visit https://console.firebase.google.com/ to get your config
 
-import { initializeApp } from 'firebase';
+import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 

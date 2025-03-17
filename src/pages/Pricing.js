@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { FaCheck, FaTimes, FaPlus } from 'react-icons/fa';
+import { FaCheck, FaPlus } from 'react-icons/fa';
 import Navbar from '../components/Navbar';
 import { PAYMENT_PLANS, ADDITIONAL_CREDITS } from '../config/paypal-config';
 import { useAuth } from '../context/AuthContext';
@@ -178,7 +178,7 @@ function Pricing() {
     // If not logged in, redirect to login page
     if (!currentUser) {
       // In a real app, you would save the selected plan to localStorage or context
-      // and then redirect to login
+      console.log(`Selected plan: ${selectedPlan}`);
     }
   };
   
